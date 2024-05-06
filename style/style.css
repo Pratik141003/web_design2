@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #2234ae;
+background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+
+  
+ 
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+ color: orange;
+background-image: url("/img/coe.png");
+background-size: 50px;
+margin-left: 15px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 2;
+  
+}
+.logo{
+  padding-right: 150px;
+  margin-top: 15px;
+  position: left;
+}
+.menu a{
+  padding: 15px 15px;
+  
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: orange;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #000539;
+  
+}
+.menu{
+  padding-right: 50px;
+}
+ .menu a:hover {background-color: #2234ae}
+
+.menu a:active {
+  background-color: rgb(69, 141, 73);
+  box-shadow: 0 5px #f2ff02;
+  transform: translateZ(4px);
+}
+nav .logo {
+  width: 25%;
+  text-align: center;
+  font-size: 50px;
+  /*background: red;*/
+}
+
+
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu a:first-child {
+  color: #ffffff;
+  font-size: 10px;
+
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+ background-image: url("/img/collage.jpg");
+ background-repeat:repeat;
+ background-size: cover;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  margin: 40px 0 20px 50px;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  /*background: #00b894;*/
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover {
+  background: #ffb700;
+  color: white;
+}
+
+section .btntwo {
+  background: #ffb700;
+  color: white;
+}
+
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #ffb700;
+}
+
+@keyframes changetext {
+  0% {
+    content: "COME & EXPERIENCE";
+  }
+  25% {
+    content: "ONE OF THE MOST EXCITING EVENT";
+  }
+  35% {
+    content: "WITH GLORY";
+  }
+  60% {
+    content: "THE CRETECNOVA";
+  }
+  80% {
+    content: "2K24";
+  }
+  100% {
+    content: "PROJECT HUB";
+  }
+}
